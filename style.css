@@ -28,7 +28,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
-    border: 1px solid rgb(117, 172, 123); 
 }
 .header h1{
     font-size: 24px;
@@ -50,19 +49,17 @@ li a {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 /*Hero section*/
 .hero {
-    
+    flex-grow: 1;
     background-color: #1f2937;
     color: #f9faf8;    
 }
-.wrapper {
-    border: 1px solid rgb(117, 172, 123); 
-    margin: 0;
-    padding:0 ;
+.hero .wrapper {
+    margin: 10px;
+    padding:10px;
     max-width: 1120px;
     margin: auto;
     display: flex;
@@ -71,28 +68,59 @@ li a {
     display: flex; 
     flex-direction: column;  
     justify-content: center;
-    padding: 15px;
-       
+    flex: 0 1 38%;    
+    padding: 0px 10px;   
 }
 .sidebar-left h1 {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    margin: 5px 0px;
+    
+}
+.sidebar-left p {
+    margin: 5px 0px;
 }
 .sidebar-right{
     display: flex;   
     justify-content: center;
-    padding: 15px;
     flex-direction: column;
-     
-    
+    flex: 0 1 58%;      
 }
 .placeholder {
-    height: 300px;
-    width: 320px;
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
     background-color: gray;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+button {
+    margin: 5px 0px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 12px;
+    padding: 5px 10px;
+    box-shadow:2px solid rgb(31, 41, 55, 0.5);
+    border-radius: 5px;
+}
+
+/*Flexboxes */
+.flexboxes {
+    
+    margin: auto;
+    min-width: 1120px;
+    border: 2px solid  #3882f6;
+
+}
+.flexboxes .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    margin-top: 10px;
+    flex:1;
+    text-align: center;
 }
