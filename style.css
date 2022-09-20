@@ -53,6 +53,8 @@ li a {
 }
 /*Hero section*/
 .hero {
+    display: flex;
+    height: 300px;
     flex-grow: 1;
     background-color: #1f2937;
     color: #f9faf8;    
@@ -60,9 +62,9 @@ li a {
 .hero .wrapper {
     margin: 10px;
     padding:10px;
-    max-width: 1120px;
+    min-width: 1120px;
     margin: auto;
-    display: flex;
+    display: flex; 
 }
 .sidebar-left {
     display: flex; 
@@ -76,7 +78,6 @@ li a {
     font-weight: bolder;
     color: #f9faf8;
     margin: 5px 0px;
-    
 }
 .sidebar-left p {
     margin: 5px 0px;
@@ -106,14 +107,15 @@ button {
     box-shadow:2px solid rgb(31, 41, 55, 0.5);
     border-radius: 5px;
 }
-
 /*Flexboxes */
 .flexboxes {
-    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    min-width: 1120px;
-    border: 2px solid  #3882f6;
-
+    min-width: 1120px;    
+    margin: 30px 0px;
 }
 .flexboxes .wrapper {
     display: flex;
@@ -123,4 +125,58 @@ button {
     margin-top: 10px;
     flex:1;
     text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;  
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+.card p {
+    text-align: center;
+}
+/*Testimonial*/
+.testimonial {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    padding: 30px 10px;
+    height: 200px;   
+}
+.testimonial .wrapper {
+    max-width: 1120px;  
+    margin: auto;
+    display: flex;   
+    flex-direction: column;
+}
+.testimonial .wrapper p {
+    margin: 0px;
+    font-style: italic;  
+}
+#thor {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 0px;   
+    font-weight: bold;
+    text-align: right;   
+}
+/*Modal */
+.modal {
+    height: 300px;
+    min-width: 1120px; 
+    margin: auto;
 }
