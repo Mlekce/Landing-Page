@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -179,4 +183,32 @@ button {
     height: 300px;
     min-width: 1120px; 
     margin: auto;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.modal .wrapper {
+    min-width: 400px;
+    min-height: 150px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    min-width: 1120px; 
+    border-radius: 10px;
+    color: #f9faf8;
+    gap: 200px;
+}
+.modal-left h1 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+.modal-left p {
+    
+    
+}
+.modal-button button {
+    font-size: 18px;
+    padding: 14px;
+    border: 2px solid #f9faf8;
 }
